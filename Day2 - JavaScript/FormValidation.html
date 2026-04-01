@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Form</title>
+    </head>
+    <body>
+        <form onsubmit="return validate()">
+            <label>Name:</label>
+            <input type="text", id="name">
+            <br><br>
+            <label>Email:</label>
+            <input type="text", id="email">
+            <br><br>
+            <input type="submit">
+        </form>
+
+        <script>
+            function validate(){
+                let name = document.getElementById("name").value;
+
+                let email = document.getElementById("email").value;
+
+                if(name == "" || email == ""){
+                    alert("All Fields are Required!");
+                    return false;
+                }
+
+                alert("Form Submitted Successfully!");
+                return true;
+            }
+        </script>
+    </body>
+</html>
