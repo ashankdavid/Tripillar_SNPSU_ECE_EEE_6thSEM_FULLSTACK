@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Contact Us</h1>
+            <p>Leave you details here and we will catch up to you very soon!</p>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="submissions.html">Submissions</a>
+            <a button onclick="toggleMode()">🌙Dark Mode</button>
+        </nav>
+
+        <section style="margin: 20px;">
+            <form class="form" onsubmit="return saveData()">
+                <label>Name:</label>
+                <input type="text" id="name"><br><br>
+
+                <label>Email:</label>
+                <input type="email" id="email"><br><br>
+
+                <label>Message:</label>
+                <textarea id="message"></textarea><br><br>
+
+                <input type="submit" onclick="validateForm()"><br><br>
+            </form>
+        </section>
+
+        <footer>
+            <p>We will contact you soon</p>
+            <p>© 2026 Coders Arcade</p>
+        </footer>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>

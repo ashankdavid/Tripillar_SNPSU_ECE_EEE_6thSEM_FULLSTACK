@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            // future task
+            let p = new Promise((resolve) => {
+            setTimeout(() => {
+                resolve("Data Ready");
+            }, 2000);
+            });
+
+            async function getData(){
+            let result = await p;
+                console.log(result);
+            }
+
+            getData();
+        </script>
+    </body>
+</html>

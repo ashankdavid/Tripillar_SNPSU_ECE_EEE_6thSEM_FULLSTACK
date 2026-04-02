@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Submissions</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Form Submissions</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="submissions.html">Submissions</a>
+            <a button onclick="toggleMode()">🌙Dark Mode</button>
+        </nav>
+
+        <section style="margin: 10px;">
+            <table border="1" width="100%", id="dataTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                    <th>Action</th>
+                </tr>
+            </table>
+        </section>
+
+        <footer>
+            <p>© 2026 Coders Arcade</p>
+        </footer>
+
+        <script src="scripts.js"></script>
+
+        <script>
+            loadData();
+        </script>
+    </body>
+</html>
